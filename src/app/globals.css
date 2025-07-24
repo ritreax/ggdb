@@ -3,24 +3,45 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --border: #dcdcdc;
+  --hover-1: #d3d3d3;
+  --hover-2: #c7c7c7;
+  --input: #f1f1f1;
+  --card: #ffffff;
+  --button: #ffffff;
+  --blue: #0f6be9;
+  --hover-blue: #0d4b9f;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-border: var(--border);
+  --color-hover-1: var(--hover-1);
+  --color-hover-2: var(--hover-2);
+  --color-input: var(--input);
+  --color-card: var(--card);
+  --color-button: var(--button);
+  --color-blue: var(--blue);
+  --color-hover-blue: var(--hover-blue);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --border: #272727;
+  --hover-1: #3a3a3a;
+  --hover-2: #b4b4b4;
+  --input: #272727;
+  --card: #272727;
+  --button: #272727;
+
+
+  --blue: #0f6be9;
+  --hover-blue: #0d4b9f;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
