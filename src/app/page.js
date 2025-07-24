@@ -1,3 +1,4 @@
+import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { FeaturedWeekSection } from "@/components/section/FeaturedWeek/FeaturedWeekSection";
 import { HeroSection } from "@/components/section/HeroSection/HeroSection";
@@ -6,8 +7,7 @@ import { TopCompaniesSection } from "@/components/section/TopCompanies/TopCompan
 
 export default function Home() {
   return (
-    //PB'Yi kaldırmayı unutma
-    <div className="flex flex-col items-center gap-36 pb-36">
+    <div className="flex flex-col min-h-screen items-center gap-36">
       <div className="px-4 w-full min-h-dvh flex flex-col items-center">
         <Header />
         <HeroSection />
@@ -16,6 +16,8 @@ export default function Home() {
       <FeaturedWeekSection />
       <MostVisitedSection />
       <TopCompaniesSection />
+
+      <Footer />
     </div>
   );
 }
